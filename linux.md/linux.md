@@ -27,11 +27,11 @@ $ ssh-keygen -f gkrishna
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
 $ pwd
 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments
-
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
 $ ll
 total 0
 drwxr-xr-x 1 lovel 197609 0 Nov  1 07:34 linux.md/
+
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
 
 $ ssh-keygen -f gkrishna
