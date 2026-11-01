@@ -6,7 +6,10 @@
 ---
 1a> Launch an Amazon Linux 2023 EC2 instance in HYD region.
 Ans:
-Before Launching EC2 instance, needs to do two things. One is to create security group and second one is to generate SSH keypai and Import Into AWS Console.
+
+Before Launching EC2 instance, needs to do two things. 
+One is to create security group and second one is to generate SSH keypai and Import Into AWS Console.
+
 --security Group  'linuxpractice' created successfully and below is the details/evidence.
 ![ṣ](image-3.png)
 ![ṣ](image-4.png)
@@ -15,18 +18,22 @@ Before Launching EC2 instance, needs to do two things. One is to create security
 ---
 Ans:
 ---Command (ssh-keygen -f <filename>)
+
 $ ssh-keygen -f gkrishna
+
  -->>successfully created SSH Keypair and below is the evidence.
 ![ṣ](image-2.png)
 ----------------------------------------------------------------------
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
 $ pwd
 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments
+
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
 $ ll
 total 0
 drwxr-xr-x 1 lovel 197609 0 Nov  1 07:34 linux.md/
 lovel@VENISHAMUMMY UCRT64 /d/DEVOPS/DAWS-92s/repos/linux_shell_assignments (main)
+
 $ ssh-keygen -f gkrishna
 Generating public/private ed25519 key pair.
 Enter passphrase for "gkrishna" (empty for no passphrase):
