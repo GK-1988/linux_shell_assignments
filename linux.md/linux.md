@@ -139,10 +139,13 @@ Ans:
 Last login: Sun Nov  1 02:51:47 2026 from 58.84.61.145
 [ec2-user@ip-172-31-45-137 ~]$ hostname
 ip-172-31-45-137.ap-south-2.compute.internal
+
 [ec2-user@ip-172-31-45-137 ~]$ pwd
 /home/ec2-user
+
 [ec2-user@ip-172-31-45-137 ~]$ whoami
 ec2-user
+
 [ec2-user@ip-172-31-45-137 ~]$ id
 uid=1000(ec2-user) gid=1000(ec2-user) groups=1000(ec2-user),4(adm),10(wheel),190(systemd-journal) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 [ec2-user@ip-172-31-45-137 ~]$
@@ -195,9 +198,11 @@ BUG_REPORT_URL="https://github.com/amazonlinux/amazon-linux-2023"
 VENDOR_NAME="AWS"
 VENDOR_URL="https://aws.amazon.com/"
 SUPPORT_END="2029-06-30"
+
 [ec2-user@ip-172-31-45-137 ~]$ cat /etc/os-release |grep VERSION
 VERSION="2023"
 VERSION_ID="2023"
+
 [ec2-user@ip-172-31-45-137 ~]$ uname -a
 Linux ip-172-31-45-137.ap-south-2.compute.internal 6.18.56-125.164.amzn2023.x86_64 #2 SMP PREEMPT_DYNAMIC Mon Oct 19 19:39:29 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
 [ec2-user@ip-172-31-45-137 ~]$
@@ -258,10 +263,12 @@ $
 [ec2-user@ip-172-31-45-137 ~]$ pwd
 /home/ec2-user
 [ec2-user@ip-172-31-45-137 ~]$ mkdir -p devops/projects/batch-90s
+
 [ec2-user@ip-172-31-45-137 ~]$ find devops -type d
 devops
 devops/projects
 devops/projects/batch-90s
+
 [ec2-user@ip-172-31-45-137 ~]$ ls -R devops
 devops:
 projects
@@ -283,6 +290,7 @@ cat notes.txt
 Now, I am trying to complete the Linux assignments.
 It will increase my confidence levels.
 > EOF
+
 [ec2-user@ip-172-31-45-137 batch-90s]$ cat notes.txt
 Hi, I am Gopi Krishna and i am learning DevOps Course.
 Now, I am trying to complete the Linux assignments.
@@ -320,24 +328,31 @@ mv notes.txt backup.txt ---renaming the file.
 ------------
 [ec2-user@ip-172-31-45-137 batch-90s]$ pwd
 /home/ec2-user/devops/projects/batch-90s
+
 [ec2-user@ip-172-31-45-137 batch-90s]$ ll
 total 4
 -rw-r--r--. 1 ec2-user ec2-user 293 Nov  1 04:20 notes.txt
+
 [ec2-user@ip-172-31-45-137 batch-90s]$ cp notes.txt /home/ec2-user/devops/projects/
+
 [ec2-user@ip-172-31-45-137 projects]$ ls /home/ec2-user/devops/projects
 backup.txt  batch-90s
 [ec2-user@ip-172-31-45-137 batch-90s]$ cd /home/ec2-user/devops/projects
+
 [ec2-user@ip-172-31-45-137 projects]$ ll
 total 4
 drwxr-xr-x. 2 ec2-user ec2-user  23 Nov  1 04:48 batch-90s
 -rw-r--r--. 1 ec2-user ec2-user 293 Nov  1 04:49 notes.txt
+
 [ec2-user@ip-172-31-45-137 projects]$ cp notes.txt backup.txt
+
 [ec2-user@ip-172-31-45-137 projects]$ ll
 total 8
 -rw-r--r--. 1 ec2-user ec2-user 293 Nov  1 04:50 backup.txt
 drwxr-xr-x. 2 ec2-user ec2-user  23 Nov  1 04:48 batch-90s
 -rw-r--r--. 1 ec2-user ec2-user 293 Nov  1 04:49 notes.txt
 [ec2-user@ip-172-31-45-137 projects]$ mv notes.txt backup.txt
+
 [ec2-user@ip-172-31-45-137 projects]$ ll
 total 4
 -rw-r--r--. 1 ec2-user ec2-user 293 Nov  1 04:49 backup.txt
@@ -349,6 +364,7 @@ drwxr-xr-x. 2 ec2-user ec2-user  23 Nov  1 04:48 batch-90s
 Ans: backup.txt file was successfully moved to /tmp directory.
 ------------------------
 [ec2-user@ip-172-31-45-137 projects]$ mv backup.txt /tmp
+
 [ec2-user@ip-172-31-45-137 projects]$ cd /tmp
 [ec2-user@ip-172-31-45-137 tmp]$ ll
 total 4
@@ -368,17 +384,24 @@ ll
 ----------------------------------
 [ec2-user@ip-172-31-45-137 ~]$ pwd
 /home/ec2-user
+
 [ec2-user@ip-172-31-45-137 ~]$ ls devops
 projects
+
 [ec2-user@ip-172-31-45-137 ~]$ ls devops/projects
 batch-90s
+
 [ec2-user@ip-172-31-45-137 ~]$ ls devops/projects/batch-90s
 notes.txt
+
 [ec2-user@ip-172-31-45-137 ~]$ rm -rf devops
+
 [ec2-user@ip-172-31-45-137 ~]$ ls devops
 ls: cannot access 'devops': No such file or directory
+
 [ec2-user@ip-172-31-45-137 ~]$ ll
 total 0
+
 [ec2-user@ip-172-31-45-137 ~]$ date
 Sun Nov  1 05:03:10 UTC 2026
 [ec2-user@ip-172-31-45-137 ~]$
@@ -412,6 +435,7 @@ drwxr-xr-x. 3 root   root                17 Nov  1 02:45 amazon
 drwxr-x---. 2 chrony chrony              72 Nov  1 02:45 chrony
 -rw-rw-r--. 1 root   utmp              4224 Nov  1 03:59 wtmp
 -rw-rw-r--. 1 root   utmp            292292 Nov  1 03:59 lastlog
+
 [ec2-user@ip-172-31-45-137 ~]$ ls -ltr '/var/log/'
 total 180
 drwxr-x---. 2 root   root                 6 Jul 14 17:05 sssd
